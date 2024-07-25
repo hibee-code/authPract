@@ -8,8 +8,7 @@ export const dataSourceOptions: DataSourceOptions = {
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   port: parseInt(process.env.DB_PORT),
-  host: process.env.DB_HOST,
-  entities: ['./src/**/*.entity.{js,ts}'],
+  entities: [pathFromSrc('/**/*.entity.{js,ts}')],
   migrations: [pathFromSrc('config/migrations/**/*.{js,ts}')],
 };
 const dataSource = new DataSource(dataSourceOptions);

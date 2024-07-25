@@ -8,15 +8,15 @@ const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 export class SingnupDto {
   @IsNotEmpty()
   @IsString()
-  firstname: string;
+  firstName: string;
 
   @IsNotEmpty()
   @IsString()
-  lastname: string;
+  lastName: string;
 
   @IsNotEmpty()
   @IsString()
-  username: string;
+  userName: string;
 
   @IsNotEmpty()
   @IsString()
