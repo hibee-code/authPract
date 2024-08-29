@@ -5,7 +5,7 @@ const passwordRegEx =
 
 const emailRegEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-export class SingnupDto {
+export class SignupDto {
   @IsNotEmpty()
   @IsString()
   firstName: string;
